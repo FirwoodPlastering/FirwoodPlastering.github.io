@@ -111,7 +111,7 @@
     .hero {
       position: relative; isolation: isolate; overflow: hidden;
       min-height: 610px; display: flex; align-items: center;
-      background: var(--navy) url("Plasterer2.PNG") center 48% / cover no-repeat;
+      background: var(--navy) url("Plaster2.JPEG") center 48% / cover no-repeat;
       color: #fff;
     }
     .hero::before {
@@ -170,7 +170,7 @@
     .work { background: var(--cream); }
     .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
     .gallery figure { margin: 0; overflow: hidden; border-radius: var(--radius); background: #e7e1d8; box-shadow: var(--shadow); }
-    .gallery img { width: 100%; height: 360px; object-fit: cover; transition: transform .45s ease; }
+    .gallery img { width: 100%; height: auto; object-fit: contain; transition: transform .45s ease; }
     .gallery figure:hover img { transform: scale(1.035); }
     .gallery figcaption { padding: 13px 17px; background: #fff; color: var(--muted); font-size: .87rem; }
     .gallery img:not([src]), .gallery img[src=""] { display: none; }
@@ -248,7 +248,7 @@
       .service-grid, .gallery, .areas-inner { grid-template-columns: 1fr; }
       .service-card:last-child { grid-column: auto; }
       .towns { justify-content: flex-start; }
-      .gallery img { height: 270px; }
+      .gallery img { height: auto; }
       .contact-panel, .enquiry-form { padding: 24px; }
       .form-row { grid-template-columns: 1fr; }
       .footer-inner { justify-content: center; text-align: center; }
